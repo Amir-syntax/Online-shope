@@ -1,0 +1,99 @@
+.main-menu {
+  position: relative;
+  z-index: 1000;
+  overflow: visible;
+  color: var(--color-text);
+  background-color: var(--color-org);
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid var(--color-border);
+  height: 50px;
+}
+.u-min-menu {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.main-menu ul li {
+  display: inline-block;
+  padding: 7px 9px;
+}
+
+.main-menu ul li {
+  position: relative;
+}
+.main-menu a {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 2;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
+}
+.main-menu > ul > li > a {
+  padding: 8px 8px;
+}
+.main-menu li:hover > a {
+  color: #111;
+}
+.mini-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 190px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fffcf6;
+  text-align: left;
+  border: 2px solid var(--color-border);
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1100;
+  transition: all 0.4s ease;
+}
+.main-menu .mini-menu li {
+  display: block;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(226, 226, 226);
+}
+.mini-menu li a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 8px;
+  font-size: 15px;
+}
+.main-menu .mini-menu li:last-child {
+  border-bottom: 0;
+}
+.main-menu .mini-menu li:hover > a {
+  background-color: rgba(226, 226, 226, 0.6);
+}
+.main-menu ul li:hover > .mini-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.min-menu2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--color-border);
+  border-radius: 3px;
+  background-color: #fffcf6;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1200;
+  transition: all 0.4s ease;
+}
+.main-menu .mini-menu li:hover > .min-menu2 {
+  opacity: 1;
+  visibility: visible;
+}

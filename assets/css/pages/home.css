@@ -1,5 +1,103 @@
-body {
-  font-family: var(--font-main);
+.slider-top {
+  position: relative;
+  z-index: 0;
+  background-color: var(--color-surface);
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.slider-top figure {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-top figure figcaption h1 {
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 23px;
+}
+.slider-top figure p {
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  width: 100%;
   font-weight: 400;
-  background-color: var(--color-bg);
+  font-size: 16px;
+}
+
+.ads-image-1 {
+  background-color: var(--color-accent);
+  border-radius: 13px;
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: relative;
+  z-index: 0;
+}
+.ads-image-1 a {
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+  border-radius: 8px;
+}
+.ads-image-1 figcaption h2 {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+}
+.ads-image-1 figcaption i {
+  position: relative;
+  margin-left: 7px;
+  top: 2px;
+  color: rgb(254, 80, 12);
+}
+.ads-image-2 {
+  background-color: var(--color-primary);
+  border-radius: 13px;
+  margin: 0;
+  position: relative;
+}
+.ads-image-1,
+.ads-image-2,
+.ads-image-3 {
+  height: 325px;
+}
+.ads-image-1 img,
+.ads-image-2 img,
+.ads-image-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 13px;
+}
+.ads-image-2 a,
+.ads-image-3 a {
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+  border-radius: 8px;
+}
+.ads-image-3 {
+  background-color: rgb(43, 40, 40);
+  border-radius: 13px;
+  margin: 0;
+  position: relative;
+}
+.row {
+  justify-content: space-around;
+}
+.ads-image-3 img {
+  position: absolute;
+  right: 13%;
+  bottom: 0;
 }

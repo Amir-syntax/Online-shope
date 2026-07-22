@@ -1,0 +1,51 @@
+.btn-yellow {
+  background-color: #ffba08;
+  color: #212529;
+  border: 1px solid #ffba08;
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #f59e0b;
+  color: #ffffff;
+  border-color: #f59e0b;
+}
+.btn-light {
+  position: absolute;
+  top: 49%;
+  left: 5%;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.btn-light:hover {
+  background-color: var(--color-secondary);
+}
+.btn-light-r {
+  background-color: #ffffff;
+  color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-light-r:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+.btn-light i,
+.btn-light-r i,
+.btn-yellow i {
+  margin-left: 2px;
+  margin-right: 0;
+  margin-top: 0px;
+}

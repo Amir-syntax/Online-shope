@@ -1,1 +1,31 @@
-
+body {
+  font-family: var(--font-main);
+  font-weight: 400;
+  background-color: var(--color-background);
+  direction: ltr;
+}
+section {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  width: 23%;
+}
+.col-2 {
+  width: 48%;
+}
+.col-3 {
+  width: 73%;
+}
+.col-4 {
+  width: 99%;
+}
