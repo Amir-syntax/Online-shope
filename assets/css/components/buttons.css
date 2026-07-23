@@ -1,9 +1,11 @@
 .btn-yellow {
   background-color: #ffba08;
   color: #212529;
+  font-weight: 500;
   border: 1px solid #ffba08;
   padding: 10px 24px;
-  border-radius: 6px;
+  border-radius: 10px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
@@ -13,9 +15,7 @@
   border-color: #f59e0b;
 }
 .btn-light {
-  position: absolute;
-  top: 49%;
-  left: 5%;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;

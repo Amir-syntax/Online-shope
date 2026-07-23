@@ -29,8 +29,13 @@
   font-weight: 400;
   font-size: 16px;
 }
-
-.ads-image-1 {
+.slider-top a {
+  position: absolute;
+  top: 49%;
+  left: 5%;
+}
+.ads-image-1,
+.ads-image-4 {
   background-color: var(--color-accent);
   border-radius: 13px;
   padding: 10px;
@@ -40,7 +45,8 @@
   position: relative;
   z-index: 0;
 }
-.ads-image-1 a {
+.ads-image-1 a,
+.ads-image-4 a {
   position: absolute;
   bottom: 6%;
   right: 5%;
@@ -60,7 +66,8 @@
   top: 2px;
   color: rgb(254, 80, 12);
 }
-.ads-image-2 {
+.ads-image-2,
+.ads-image-ps {
   background-color: var(--color-primary);
   border-radius: 13px;
   margin: 0;
@@ -68,12 +75,16 @@
 }
 .ads-image-1,
 .ads-image-2,
-.ads-image-3 {
-  height: 325px;
+.ads-image-3,
+.ads-image-ps,
+.ads-image-6,
+.ads-image-4 {
+  height: 320px;
 }
 .ads-image-1 img,
 .ads-image-2 img,
-.ads-image-3 img {
+.ads-image-3 img,
+.ads-image-6 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -81,13 +92,16 @@
   border-radius: 13px;
 }
 .ads-image-2 a,
-.ads-image-3 a {
+.ads-image-3 a,
+.ads-image-ps a,
+.ads-image-6 a {
   position: absolute;
   bottom: 6%;
   right: 5%;
   border-radius: 8px;
 }
-.ads-image-3 {
+.ads-image-3,
+.ads-image-6 {
   background-color: rgb(43, 40, 40);
   border-radius: 13px;
   margin: 0;
@@ -96,8 +110,178 @@
 .row {
   justify-content: space-around;
 }
-.ads-image-3 img {
+.ads-image-3 img,
+.ads-image-6 img {
   position: absolute;
   right: 13%;
   bottom: 0;
+}
+.ads-image-ps {
+  height: 320px;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.ads-image-ps img {
+  height: 310px;
+}
+.ads-image-6 img {
+  position: relative;
+  left: 6px;
+  bottom: 8px;
+}
+.ads-image-4 img {
+  position: absolute;
+  top: 55px;
+  right: 2px;
+}
+.ads-image-4 {
+  background-color: rgba(255, 171, 107, 0.893);
+}
+.long-head {
+  padding: 25px 25px 25px 0;
+  margin-top: 100px;
+  min-height: 85%;
+  display: inline-block;
+  width: 100%;
+  background: #fd1d1d;
+  background: linear-gradient(
+    180deg,
+    rgba(253, 29, 29, 1) 46%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.long-head figure {
+  position: relative;
+}
+
+.long-head figure img {
+  position: absolute;
+  height: 500px;
+  object-fit: contain;
+  top: -200px;
+  left: 7%;
+  margin-bottom: 15px;
+}
+
+.long-head figure .fig-left {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  width: 42%;
+}
+.long-head figure .fig-left h2 {
+  display: block;
+}
+.long-head figure .fig-left a {
+  width: 160px;
+  margin-top: 10px;
+  display: block;
+}
+.long-head figure .fig-right {
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  width: 40%;
+}
+
+.offer span {
+  display: inline-block;
+  font-weight: 500;
+  height: 25px;
+  padding-top: 3px;
+}
+.offer {
+  position: absolute;
+  text-align: center;
+  top: 2.5%;
+  left: 2%;
+  background-color: rgb(233, 164, 14);
+  width: 12%;
+  border-radius: 4px;
+}
+.product-item {
+  margin-top: 135px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(145, 67, 0, 0.303);
+  border-radius: 30px;
+  height: 70%;
+  transition: all 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-8px); /* بره بالا */
+  box-shadow: 0px 8px 30px rgba(145, 67, 0, 0.6); /* سایه پررنگ‌تر و پایین‌تر */
+}
+.product-item figure {
+  position: relative;
+}
+.product-item figure {
+  margin: 20px 0;
+}
+.product-item figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+.product-item figure figcaption span {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+.product-item figure h4 {
+  margin-top: 30px;
+}
+.btn-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+.btn-item li {
+  margin-top: 5px;
+}
+.product-item-1,
+.product-item-2,
+.product-item-3,
+.product-item-4,
+.product-item-5,
+.product-item-6,
+.product-item-7,
+.product-item-8 {
+  margin-top: 135px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  height: 65%;
+}
+.product-item-1 img,
+.product-item-2 img,
+.product-item-3 img,
+.product-item-4 img,
+.product-item-5 img,
+.product-item-6 img,
+.product-item-7 img,
+.product-item-8 img {
+  border-radius: 10px;
+}
+
+.satr-sct i {
+  color: var(--color-primary);
+}
+.satr-sct {
+  position: relative;
+  top: 10px;
 }

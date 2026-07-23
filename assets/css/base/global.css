@@ -9,7 +9,7 @@ section {
   margin: 0 auto;
 }
 .wrap {
-  width: 960px;
+  width: 1140px;
   margin: 0 auto;
 }
 .row {
@@ -18,7 +18,7 @@ section {
   flex-wrap: wrap;
 }
 .col-1 {
-  width: 23%;
+  width: 24%;
 }
 .col-2 {
   width: 48%;
@@ -28,4 +28,14 @@ section {
 }
 .col-4 {
   width: 99%;
+}
+.round-20 {
+  border-radius: 20px;
+}
+.bg-red {
+  background-color: var(--color-secondary);
+}
+
+.mg-15 {
+  margin-bottom: 15px;
 }
