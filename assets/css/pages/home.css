@@ -653,7 +653,7 @@
     z-index: 4;
   }
   .back-fig {
-    font-size: 30px;
+    font-size: 25px;
   }
   .col-1,
   .col-2,
@@ -677,7 +677,7 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 385px) {
   .ads-image-ps img {
     height: 200px;
     left: -40px;
