@@ -1,3 +1,10 @@
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .slider-top {
   position: relative;
   z-index: 0;
@@ -170,8 +177,16 @@
 .long-head figure {
   position: relative;
 }
-
-.long-head figure img {
+.hed-img {
+  position: absolute;
+  height: 325px;
+  object-fit: contain;
+  top: -110px;
+  left: 190px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.apple-wth {
   position: absolute;
   height: 500px;
   object-fit: contain;
@@ -682,6 +697,39 @@
     padding-left: 10px;
     padding-right: 6px;
   }
+
+  .fig-right {
+    display: none;
+  }
+  .btn-long-y {
+    position: absolute;
+    top: 75px;
+    left: -35px;
+  }
+  .texts-long {
+    position: absolute;
+    left: -40px;
+  }
+
+  .hed-img {
+    display: inline-block;
+    left: 80px;
+    height: 245px;
+  }
+  .apple-wth {
+    height: 400px;
+    top: -150px;
+    left: 55px;
+  }
+  .btn-long-p {
+    position: absolute;
+    top: 65px;
+    left: -35px;
+  }
+  .blog-1 {
+    height: 300px;
+    left: 75px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -701,5 +749,8 @@
     text-align: center;
     padding: 4px 0;
     left: 90px;
+  }
+  .btn-light i {
+    display: none;
   }
 }
