@@ -1,3 +1,41 @@
+.logo {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  margin-left: 10px;
+}
+.home-head a i {
+  color: rgb(255, 38, 38);
+}
+.shop-head a i {
+  color: #9f63ff;
+}
+.blog-head a i {
+  color: rgb(117, 27, 27);
+}
+.buy-head a i {
+  color: rgb(0, 142, 0);
+}
+.search-box {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 12%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid rgba(108, 108, 108, 0.414);
+  padding-left: 15px;
+  margin-left: 10px;
+}
 .main-menu {
   position: relative;
   z-index: 1000;
@@ -5,27 +43,48 @@
   color: var(--color-text);
   background-color: var(--color-org);
   margin: 0 auto;
-  text-align: center;
-  border-bottom: 2px solid var(--color-border);
+  text-align: left;
   height: 50px;
+  background-color: transparent;
 }
-.u-min-menu {
+section.top {
+  border-bottom: 3px solid rgba(231, 231, 231, 0.871);
+  background: #e3e3e3;
+  background: linear-gradient(
+    0deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(133, 133, 133, 1) 100%
+  );
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.u-main-menu {
   position: relative;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: transparent;
+  width: 70%;
 }
 .main-menu ul li {
   display: inline-block;
   padding: 7px 9px;
 }
+.main-menu {
+  display: flex;
+}
+.main-menu ul li:first-of-type {
+  margin-left: auto;
+}
 
 .main-menu ul li {
   position: relative;
+  vertical-align: top;
 }
+
 .main-menu a {
   color: var(--color-text);
-  font-size: 16px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.75;
   text-decoration: none;
   transition:
     color 0.25s ease,
@@ -39,7 +98,7 @@
 }
 .mini-menu {
   position: absolute;
-  top: 48px;
+  top: 60px;
   left: 0;
   width: 190px;
   margin: 0;

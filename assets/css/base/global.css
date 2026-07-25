@@ -4,11 +4,38 @@ body {
   background-color: var(--color-background);
   direction: ltr;
 }
+
+.bg-red-gra {
+  background: #ff3333;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 51, 51, 1) 39%,
+    rgba(255, 176, 66, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 51, 51, 1) 39%,
+    rgba(255, 176, 66, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 51, 51, 1) 39%,
+    rgba(255, 176, 66, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF3333", endColorstr="#FFB042", GradientType=0);
+}
+.bg-green {
+  background-color: green;
+}
 section {
   padding: 10px 0;
   margin: 0 auto;
 }
 .wrap {
+  width: 1140px;
+  margin: 0 auto;
+}
+.wrap-vip {
   width: 1140px;
   margin: 0 auto;
 }
@@ -28,6 +55,9 @@ section {
 }
 .col-4 {
   width: 99%;
+}
+.col-blog {
+  width: 23%;
 }
 .round-20 {
   border-radius: 20px;

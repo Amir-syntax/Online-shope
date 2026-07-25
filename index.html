@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <script src="assets/js/main.js"></script>
     <!-- start header -->
     <section class="top">
       <script src="assets/js/main.js"></script>
-      <nav class="main-menu">
+      <nav class="main-menu animate__animated animate__fadeInLeft">
+        <img src="assets/images/Logo-org.png" alt="" class="logo" />
+        <div class="search-box">
+          <label for="search"></label>
+          <input
+            type="search"
+            id="search"
+            class="search"
+            placeholder="Search"
+          />
+        </div>
+
         <div class="wrap"></div>
-        <ul class="u-min-menu">
-          <li>
-            <a href="#">Home <i class="fa fa-home"></i></a>
+        <ul class="u-main-menu">
+          <li class="home-head">
+            <a href="#"><i class="fa fa-home"></i> Home</a>
           </li>
-          <li>
-            <a href="#">Shop<i class="fa fa-shopping-cart"></i></a>
+          <li class="shop-head">
+            <a href="#"><i class="fa fa-shopping-cart"></i> Shop</a>
             <ul class="mini-menu">
               <li>
                 <a href="#">Shop 2</a>
@@ -30,11 +42,11 @@
               <li><a href="#">Shop 6</a></li>
             </ul>
           </li>
-          <li>
-            <a href="#">Blog <i class="fa fa-newspaper-o"></i></a>
+          <li class="blog-head">
+            <a href="#blog"><i class="fa fa-newspaper-o"></i> Blog</a>
           </li>
-          <li>
-            <a href="#">Buy <i class="fa fa-money"></i></a>
+          <li class="buy-head">
+            <a href="#"><i class="fa fa-money"></i> Buy</a>
           </li>
         </ul>
       </nav>
@@ -48,7 +60,11 @@
           <div class="col-4">
             <div class="slider-top">
               <figure>
-                <img src="assets/images/slider.png" alt="Slider Image 1" />
+                <img
+                  src="assets/images/slider.png"
+                  alt="Slider Image 1"
+                  class="animate__delay-1s animate__animated animate__flip"
+                />
                 <figcaption><h1>Amir online shop</h1></figcaption>
                 <p>Welcome to our online shop!</p>
                 <a href="#" class="btn-light"
@@ -112,6 +128,7 @@
               <a href="#" class="btn-light"
                 >Go to Shop <i class="fa fa-long-arrow-right"></i>
               </a>
+              <figcaption class="back-fig">Play station 5</figcaption>
             </figure>
           </div>
           <div class="col-1">
@@ -131,7 +148,7 @@
       <div class="warp">
         <div class="row">
           <div class="col-4">
-            <div class="long-head round-20 mg-15">
+            <div class="long-head round-20 mg-15 bg-red">
               <figure>
                 <img src="assets/images/2.png" alt="long head image" />
                 <figcaption class="fig-left">
@@ -343,5 +360,208 @@
       </div>
     </section>
     <!-- end Product Showcase -->
+    <!-- start long head -->
+    <section>
+      <div class="warp">
+        <div class="row">
+          <div class="col-4">
+            <div class="long-head round-20 mg-15 bg-green">
+              <figure>
+                <img
+                  src="assets/images/wtch.png"
+                  alt="long head image"
+                  class="apple-wth"
+                />
+                <figcaption class="fig-left">
+                  <h2>Best apple watch</h2>
+                  <a href="#" class="btn-light-r"
+                    >Go to Shop <i class="fa fa-long-arrow-right"></i
+                  ></a>
+                </figcaption>
+                <figcaption class="fig-right">
+                  <h2>Test watch</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum blanditiis eligendi ullam hic quas, ab quod nobis,
+                    loremque, voluptatibus eaque. Quisquam, voluptates.
+                    Quisquam, voluptates.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!-- end long head -->
+    <!-- Start blog-->
+    <section class="blog" id="blog">
+      <div class="wrap-vip">
+        <div class="row">
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/blog-1.webp"
+              alt=""
+            />
+            <h3>Using headphones</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 159 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/iphone.webp"
+              alt=""
+            />
+            <h3>High price!</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 26 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/Coffee maker.webp"
+              alt=""
+            />
+            <h3>Benefits of Coffee</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 10 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/Keyboard.webp"
+              alt=""
+            />
+            <h3>Keyboard sound</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 570 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/Laptop.webp"
+              alt=""
+            />
+            <h3>Apple laptop</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 1026 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/motherboard.webp"
+              alt=""
+            />
+            <h3>Motherboard or city?</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 798 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/Mouse.webp"
+              alt=""
+            />
+            <h3>Gaming Mouse</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 999 Comment</span>
+            </div>
+          </div>
+          <div class="blog-1 col-blog">
+            <img
+              class="round-20 mg-15"
+              src="assets/images/blog/Security.webp"
+              alt=""
+            />
+            <h3>Is the camera secure?</h3>
+            <div class="meta">
+              <i class="fa fa-comment-o"></i><span> 626 Comment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+
+      <button class="slider-btn next">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </section>
+    <!-- end blog-->
+    <!-- Start footer-->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div class="footer-box">
+            <h2>Amir</h2>
+
+            <p>
+              Discover the latest gadgets, premium accessories, and cutting-edge
+              technology with the best quality.
+            </p>
+
+            <div class="socials">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa fa-youtube-play"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-box">
+            <h3>Customer Service</h3>
+
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
+          </div>
+
+          <div class="footer-box">
+            <h3>Newsletter</h3>
+
+            <p>Subscribe to receive our latest news and special offers.</p>
+
+            <form class="footer-form">
+              <input type="email" placeholder="Your Email" />
+
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2026 AMIR. All Rights Reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
