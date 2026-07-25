@@ -1,10 +1,3 @@
-html,
-body {
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 .slider-top {
   position: relative;
   z-index: 0;
@@ -729,6 +722,33 @@ body {
   .blog-1 {
     height: 300px;
     left: 75px;
+  }
+  .logo {
+    top: 10px;
+  }
+  .search {
+    position: relative;
+    top: 8px;
+    width: 200px;
+    left: 80px;
+  }
+  .top {
+    height: 150px;
+  }
+  .u-main-menu {
+    top: 55px;
+    left: -30px;
+    width: 100%;
+    padding: 0;
+  }
+  .u-main-menu li {
+    padding: 0;
+    width: 80px;
+    padding: 0;
+  }
+  .mini-menu {
+    top: 84px;
+    left: -85px;
   }
 }
 
