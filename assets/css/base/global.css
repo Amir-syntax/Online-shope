@@ -47,7 +47,8 @@ section {
 .col-1 {
   width: 24%;
 }
-.col-2 {
+.col-2,
+.col-lp {
   width: 48%;
 }
 .col-3 {

@@ -116,7 +116,14 @@
   right: 13%;
   bottom: 0;
 }
+.ads-image-ps img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
 .ads-image-ps {
+  position: relative;
   height: 320px;
   background: #020024;
   background: linear-gradient(
@@ -148,7 +155,7 @@
   left: 47%;
   font-size: 40px;
   color: #ffffff;
-  z-index: -1;
+  z-index: -2;
 }
 .ads-image-ps {
   z-index: 4;
@@ -207,7 +214,7 @@
   top: 2.5%;
   left: 2%;
   background-color: rgb(233, 164, 14);
-  width: 12%;
+  width: 60px;
   border-radius: 4px;
 }
 .product-item {
@@ -630,4 +637,65 @@
   color: #ffe7c2;
 
   border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+@media (max-width: 576px) {
+  .wrap {
+    max-width: 100%;
+    margin: 0 15px;
+    width: auto;
+  }
+  .col-lp {
+    width: 100%;
+  }
+  .ads-image-ps img {
+    height: 250px;
+    left: -20px;
+    z-index: 4;
+  }
+  .back-fig {
+    font-size: 30px;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 49%;
+  }
+  .slider-top figure figcaption h1 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .slider-top figure p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .btn-light-slide {
+    padding: 7px;
+    margin-top: 15px;
+  }
+  .slider-top figure img {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  .ads-image-ps img {
+    height: 200px;
+    left: -40px;
+    bottom: 60px;
+    z-index: 4;
+  }
+  .back-fig {
+    font-size: 20px;
+    top: 100px;
+  }
+  .btn-light-ps {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 4px 0;
+    left: 90px;
+  }
+  .btn-light i {
+    display: none;
+  }
 }

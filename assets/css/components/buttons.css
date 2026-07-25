@@ -24,6 +24,7 @@
   padding: 10px 20px;
   border-radius: 30px;
   transition: all 0.3s ease;
+  position: relative;
 }
 .btn-light:hover {
   background-color: var(--color-secondary);
@@ -48,4 +49,8 @@
   margin-left: 2px;
   margin-right: 0;
   margin-top: 0px;
+}
+
+.btn-yellow {
+  width: 135px;
 }
